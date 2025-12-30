@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wallet Prototype</title>
+
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="CSS/Login.css">
+
+        <script src="JS/bitcoinjs-lib.js"></script>
+        <script src="JS/bip39.js"></script>
+        <script src="JS/Meta.js"></script>
+        <script src="JS/Crypto.js"></script>
+
+        <script src="JS/Omni.js"></script>
+        <script src="JS/Litecoin.js"></script>
+
+        <script src="JS/Genesis.js" defer></script>
+    </head>
+
+    <body>
+        <button onclick="addSeed()">Add Seed</button>
+        <button onclick="addKey()">Add private Key</button>
+
+        <div id="Litecoin" style="overflow: scroll; height: 90dvh;">
+            <h1>Litecoin</h1>
+            <div id="LTC_Legacy">
+                <h2>Legacy</h2>
+                <select>
+                    <option value="">Loading Data</option>
+                </select>
+                <button>Copy Address</button>
+                <div>
+                    <input type="text" placeholder="destination">
+                    <input type="number" placeholder="amount" value="0.000054" min="0.000054" step="0.00000001">
+                    <button>Send</button>
+                    <button>Send All</button>
+                </div>
+            </div>
+            <div id="LTC_Omni">
+                <h2>Omni</h2>
+                <select>
+                    <option value="">Loading Data</option>
+                </select>
+                <button>Copy Address</button>
+                <div>
+                    <input type="text" placeholder="destination">
+                    <input type="number" placeholder="amount" value="0.000054" min="0.000054" step="0.00000001">
+                    <button>Send</button>
+                    <button>Send All</button>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div id="LTC_PK">
+                <h2>Private Keys</h2>
+                <div>
+                    <h2>Legacy</h2>
+                    <select>
+                        <option value="">Loading Data</option>
+                    </select>
+                    <button>Copy Address</button>
+                    <div>
+                        <input type="text" placeholder="destination">
+                        <input type="number" placeholder="amount" value="0.000054" min="0.000054" step="0.00000001">
+                        <button>Send</button>
+                        <button>Send All</button>
+                    </div>
+                </div>
+                <div>
+                    <h2>Omni</h2>
+                    <select>
+                        <option value="">Loading Data</option>
+                    </select>
+                    <button>Copy Address</button>
+                    <div>
+                        <input type="text" placeholder="destination">
+                        <input type="number" placeholder="amount" value="0.000054" min="0.000054" step="0.00000001">
+                        <button>Send</button>
+                        <button>Send All</button>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="LTC_DEX">
+
+            </div>
+        </div>
+    </body>
+</html>
